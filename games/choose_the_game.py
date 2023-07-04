@@ -1,4 +1,4 @@
-import games.hangman as hangman
+import hangman
 import divination
 import messages
 
