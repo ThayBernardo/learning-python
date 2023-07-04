@@ -1,4 +1,4 @@
-import strength
+import games.hangman as hangman
 import divination
 
 def choose_game():
@@ -13,7 +13,7 @@ def choose_game():
 
     if chosen_game_int == 1:
         print('Jogando forca')
-        strength.play()
+        hangman.play()
     else:
         print('Jogando adivinhação')
         divination.play()
