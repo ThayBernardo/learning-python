@@ -31,7 +31,7 @@ def correct_kicks(secret_word, kick, corrects_letters):
         index += 1
 
 def play():
-    messages.show_message_welcome()
+    messages.show_message_welcome_hangman()
     secret_word = raffle_word()
     corrects_letters = show_corrects_letters(secret_word)
     print('Palavra: {}'.format(corrects_letters))

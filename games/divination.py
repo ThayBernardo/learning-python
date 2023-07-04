@@ -1,26 +1,25 @@
 import random
+import messages
+
+def choose_the_level(level_int):
+    if level_int == 1:
+        return 20
+    elif level_int == 2:
+        return 10
+    else:
+        return 5
 
 def play():
-    print('*' * 33)
-    print('Bem vindo ao jogo de adivinhação!')
-    print('*' * 33)
+    messages.show_message_welcome_divination()
 
     secret_number = random.randrange(1, 101)
     total_attempts = 0
     points = 1000
 
-    print('Qual nível de dificuldade?')
-    print('(1) Fácil (2) Médio (3) Difícil')
-
     level_str = input('Defina o nível: ')
     level_int = int(level_str)
 
-    if level_int == 1:
-        total_attempts = 20
-    elif level_int == 2:
-        total_attempts = 10
-    else:
-        total_attempts = 5
+    total_attempts = choose_the_level(level_int)
 
     for round in range(1, total_attempts + 1):
         print("Tentativa {} de {}".format(round, total_attempts))

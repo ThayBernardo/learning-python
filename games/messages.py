@@ -1,4 +1,17 @@
-def show_message_welcome():
+def ask_game():
+    print('*' * 33)
+    print('*******Escolha o seu jogo!*******')
+    print('*' * 33)
+    print('(1) Forca (2) Adivinhação')
+
+def show_message_welcome_divination():
+    print('*' * 33)
+    print('Bem vindo ao jogo de adivinhação!')
+    print('*' * 33)
+    print('Qual nível de dificuldade?')
+    print('(1) Fácil (2) Médio (3) Difícil')
+
+def show_message_welcome_hangman():
     print('*' * 33)
     print('***Bem vindo ao jogo de forca!***')
     print('*' * 33)

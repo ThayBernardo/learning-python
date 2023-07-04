@@ -1,12 +1,9 @@
 import games.hangman as hangman
 import divination
+import messages
 
 def choose_game():
-    print('*' * 33)
-    print('*******Escolha o seu jogo!*******')
-    print('*' * 33)
-
-    print('(1) Forca (2) Adivinhação')
+    messages.ask_game()
 
     chosen_game_str = input('Qual jogo ?')
     chosen_game_int = int(chosen_game_str)
